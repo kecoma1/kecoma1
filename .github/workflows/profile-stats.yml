@@ -6,6 +6,7 @@ on:
     paths:
       - README.md
       - .github/workflows/profile-stats.yml
+      - .github/scripts/yearly-commits.py
   schedule:
     - cron: "23 6 * * *"
   workflow_dispatch:
@@ -45,6 +46,12 @@ jobs:
           path: profile/stats-dark.svg
           token: ${{ secrets.PROFILE_STATS_TOKEN }}
           fail_on_error: "true"
+
+      - name: Count this year's public and private commits
+        if: env.HAS_PROFILE_STATS_TOKEN == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN }}
+        run: python3 .github/scripts/yearly-commits.py
 
       - name: Generate light language card
         uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2

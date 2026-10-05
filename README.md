@@ -26,7 +26,7 @@ React · Vue / Nuxt · Node.js · Firebase · SwiftUI
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./profile/stats-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="./profile/stats-light.svg">
-  <img src="./profile/stats-light.svg" alt="Kevin's GitHub stats, including commits across public and private repositories" width="390">
+  <img src="./profile/stats-light.svg" alt="Kevin's GitHub stats, including this year's commits across public and private repositories" width="390">
 </picture>
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./profile/languages-dark.svg">
@@ -34,4 +34,4 @@ React · Vue / Nuxt · Node.js · Firebase · SwiftUI
   <img src="./profile/languages-light.svg" alt="Languages used across Kevin's public repositories" width="330">
 </picture>
 
-<sub>Commit totals include public and private repositories. Language stats use public repositories and exclude notebooks and rich-text notes.</sub>
+<sub>Commits are counted from January 1 of the displayed year, including public and private repositories. Language stats use public repositories and exclude notebooks and rich-text notes.</sub>

@@ -1,15 +1,6 @@
-
-      <svg
-        width="390"
-        height="170"
-        viewBox="0 0 390 170"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        role="img"
-        aria-labelledby="descId"
-      >
-        <title id="titleId">Kevin&#39;s GitHub Stats, Rank: A</title>
-        <desc id="descId">Total Stars Earned: 269, Total Commits  : 12453, Total PRs: 1106, Total Issues: 919</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="170" viewBox="0 0 390 170" fill="none" role="img" aria-labelledby="descId">
+        <title id="titleId">Kevin's GitHub Stats, Rank: A</title>
+        <desc id="descId">Total Stars Earned: 269, Commits (2026): 2018 Total PRs: 1106, Total Issues: 919</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -109,89 +100,46 @@
         </defs>
         
 
-        <rect
-          data-testid="card-bg"
-          class="card-bg"
-          x="0.5"
-          y="0.5"
-          rx="4.5"
-          height="99%"
-          stroke="#e4e2e2"
-          width="389"
-          fill="#fffefe"
-          stroke-opacity="1"
-        />
+        <rect data-testid="card-bg" class="card-bg" x="0.5" y="0.5" rx="4.5" height="99%" stroke="#e4e2e2" width="389" fill="#fffefe" stroke-opacity="1" />
 
         
-      <g
-        data-testid="card-title"
-        transform="translate(25, 35)"
-      >
+      <g data-testid="card-title" transform="translate(25, 35)">
         <g transform="translate(0, 0)">
-      <text
-        x="0"
-        y="0"
-        class="header"
-        data-testid="header"
-      >Kevin&#39;s GitHub Stats</text>
+      <text x="0" y="0" class="header" data-testid="header">Kevin's GitHub Stats</text>
     </g>
       </g>
     
 
-        <g
-          data-testid="main-card-body"
-          transform="translate(0, 55)"
-        >
+        <g data-testid="main-card-body" transform="translate(0, 55)">
           
     
     <svg x="0" y="0">
       <g transform="translate(0, 0)">
     <g class="stagger" style="animation-delay: 450ms" transform="translate(25, 0)">
       
-      <text class="stat  bold"  y="12.5">Total Stars Earned:</text>
-      <text
-        class="stat  bold"
-        x="154.01"
-        y="12.5"
-        data-testid="stars"
-      >269</text>
+      <text class="stat  bold" y="12.5">Total Stars Earned:</text>
+      <text class="stat  bold" x="154.01" y="12.5" data-testid="stars">269</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
       
-      <text class="stat  bold"  y="12.5">Total Commits:</text>
-      <text
-        class="stat  bold"
-        x="154.01"
-        y="12.5"
-        data-testid="commits"
-      >12453</text>
+      <text class="stat  bold" y="12.5">Commits (2026):</text>
+      <text class="stat  bold" x="154.01" y="12.5" data-testid="commits">2018</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
       
-      <text class="stat  bold"  y="12.5">Total PRs:</text>
-      <text
-        class="stat  bold"
-        x="154.01"
-        y="12.5"
-        data-testid="prs"
-      >1106</text>
+      <text class="stat  bold" y="12.5">Total PRs:</text>
+      <text class="stat  bold" x="154.01" y="12.5" data-testid="prs">1106</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
       
-      <text class="stat  bold"  y="12.5">Total Issues:</text>
-      <text
-        class="stat  bold"
-        x="154.01"
-        y="12.5"
-        data-testid="issues"
-      >919</text>
+      <text class="stat  bold" y="12.5">Total Issues:</text>
+      <text class="stat  bold" x="154.01" y="12.5" data-testid="issues">919</text>
     </g>
   </g>
     </svg>
   
         </g>
       </svg>
-    
