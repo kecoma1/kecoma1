@@ -20,26 +20,30 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: write
+    env:
+      HAS_PROFILE_STATS_TOKEN: ${{ secrets.PROFILE_STATS_TOKEN != '' }}
     steps:
       - name: Check out profile repository
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
 
       - name: Generate light stats card
+        if: env.HAS_PROFILE_STATS_TOKEN == 'true'
         uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&hide_rank=true&hide=contribs&card_width=390&theme=default&disable_animations=true
+          options: username=${{ github.repository_owner }}&include_all_commits=true&hide_rank=true&hide=contribs&card_width=390&theme=default&disable_animations=true&number_format=long
           path: profile/stats-light.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PROFILE_STATS_TOKEN }}
           fail_on_error: "true"
 
       - name: Generate dark stats card
+        if: env.HAS_PROFILE_STATS_TOKEN == 'true'
         uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21 # v2
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&hide_rank=true&hide=contribs&card_width=390&theme=github_dark&disable_animations=true
+          options: username=${{ github.repository_owner }}&include_all_commits=true&hide_rank=true&hide=contribs&card_width=390&theme=github_dark&disable_animations=true&number_format=long
           path: profile/stats-dark.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.PROFILE_STATS_TOKEN }}
           fail_on_error: "true"
 
       - name: Generate light language card
